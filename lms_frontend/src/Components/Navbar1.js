@@ -3,13 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../css/Navbar1.css';
-import {Link} from 'react-router-dom'; 
+import {Link} from 'react-router-dom';
 
 function Navbar1() {
   return (
     <Navbar className="navbar1"   bg="light" variant="black" expand="lg">
       <Container className="">
-        <Navbar.Brand ><Link style={{textDecoration:"none", color:"dark green"}} to="/">IMT Online</Link></Navbar.Brand>
+        <Navbar.Brand ><Link style={{textDecoration:"none", color:"dark green"}} to="/">IMTech</Link></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
