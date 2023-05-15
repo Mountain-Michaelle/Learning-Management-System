@@ -4,11 +4,13 @@ import {Routes, Route} from "react-router-dom";
 import About from './Components/About';
 import Footer from './Components/Footer';
 import CourseDetail from './Components/CourseDetail';
+import Slider from './Slider/Slider';
 
 function App() {
   return (
     <div className="app">
       <Navbar1 />
+      <Slider />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
