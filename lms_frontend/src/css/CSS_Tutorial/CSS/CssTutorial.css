@@ -1,0 +1,47 @@
+.flex-box{
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+.styles > ul > li {
+    list-style: none;
+    font-size: 1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.styles > .first-heading{
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(41, 38, 38);
+    width: 45%;
+    min-width: 100px;
+    border: 0.5px solid rgb(180, 160, 160);
+    padding: 8px;
+    
+}
+
+.descriptive-image{
+    width: 80%;
+    padding: 1.5rem;
+}
+.descriptive-image:hover{
+    transform: scale(1.10);
+    margin-left: 2.1rem;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.articles{
+    font-family:serif;
+    margin-top: 2rem;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: rgb(211, 211, 211);
+}
+
+.styles > h3 {
+    text-transform: capitalize;
+    color:rgb(6, 209, 209);
+    margin-top: 1rem;
+}

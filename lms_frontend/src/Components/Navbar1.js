@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../css/Navbar1.css';
 import {Link} from 'react-router-dom';
+import CssTutorial from '../css/CSS_Tutorial/CssTutorial';
 
 function Navbar1() {
   return (
@@ -20,7 +21,7 @@ function Navbar1() {
               <NavDropdown.Item href="#action/3.2">
                 Teacher
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Course Mates</NavDropdown.Item>
+              <Link to="/css-tutorial"><NavDropdown.Item href="#action/3.3">Css Practice</NavDropdown.Item></Link>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Your Attendances

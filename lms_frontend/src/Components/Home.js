@@ -5,11 +5,12 @@ import Button from 'react-bootstrap/Button';
 import Courses from '../static/images/Course.jpg';
 import {Link} from 'react-router-dom';
 import Footer from './Footer';
+import Slider from '../Slider/Slider';
 
 const Home = () => {
     return(
         <div>
-
+            <Slider />
         
         <div className='container mt-4' >
             <div className="row ">
@@ -20,7 +21,7 @@ const Home = () => {
                     <Card.Body>
                         <Card.Title className="text-info">COS421</Card.Title>
                         <Card.Text className="text-dark">
-                        Some quick example text to build on the card title and make up the bulk of
+                        Some quick example text to build on the card title and make up the bulk of yes its just for testiing
                         the card's content.
                         </Card.Text>
                         <Link to="/detail/:course_id/"><Button variant="success">Course Details</Button></Link>

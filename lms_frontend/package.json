@@ -30,6 +30,10 @@
       "react-app/jest"
     ]
   },
+  "engines": {
+    "npm": ">=8.0.0 <= 9.6.6",
+    "node": ">=16.0.0 <= 18.13.0"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "devDependencies": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
