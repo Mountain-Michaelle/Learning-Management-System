@@ -1,0 +1,53 @@
+
+.login__button{
+    padding: 15px;
+    background: rgb(176, 233, 255);
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+p > .checkBox{
+    width: 25px;
+    margin-right: 0;
+    align-items: left;
+}
+
+.remember{
+    font-size: 1.5rem
+}
+
+.login__container{
+    margin-top: 30px;
+    width: 370px;
+    max-height: 470px;
+    background: red;
+    overflow: hidden;
+    background: url('LoginBackground.jpg') no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px rgb(0, 204, 240);
+
+}
+a {
+    text-decoration: none;
+  }
+/* 
+.login > label{
+    color: rgb(9, 39, 94);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+}
+
+#chk:checked ~ login label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label{
+    transform: scale(.6)
+}  */

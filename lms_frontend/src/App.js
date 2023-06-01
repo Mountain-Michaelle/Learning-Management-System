@@ -7,6 +7,11 @@ import CourseDetail from './Components/CourseDetail';
 import Slider from './Slider/Slider';
 import CssTutorial from './css/CSS_Tutorial/CssTutorial';
 import CourseDetailVideo from './Components/CourseDetailVideo';
+import Auth from './Auth/Auth';
+import SignUp from './Auth/SignUp';
+import Login from './Auth/Login';
+import React from 'react';
+import Index from './Dashboard/Index';
 
 function App() {
   return (
@@ -18,6 +23,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/detail/:course_id" element={<CourseDetail />} />
         <Route path="/detail/:course_id/video" element={<CourseDetailVideo />} />
+        <Route path="/auth" element={<Auth />} />
+        <Route path="auth/login" element={<Login />} />
+        <Route path="/dashboard" element={<Index />} />
       </Routes>
     </div>
   );

@@ -1,0 +1,12 @@
+.borders{ 
+    border: 2px solid rgb(126, 26, 26);
+} 
+.point{
+    cursor:pointer
+}
+/* 
+@media (max-width: 950px) {
+    .cards{
+        width: 100%;
+    }
+} */

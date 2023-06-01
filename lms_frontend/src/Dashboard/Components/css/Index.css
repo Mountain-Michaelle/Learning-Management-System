@@ -1,0 +1,114 @@
+@import url('https://fonts-googleapis.com/css2?family=Monserrat:wght@300;400;500;600;700&display=swap');
+.gen{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Monserrat', sans-serif;
+    transition: .2s ease;
+}
+
+/* colors and styles (Default)*/
+
+:root{
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(95, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%; 18%);
+    --textColor: hsl(224, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+
+    /* Fonts and Typography */
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+
+    /* Default style */
+
+}
+
+html{
+    font-size: 90%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.icon{
+    font-size: var(--h2FontSize);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+.flex{
+    display: flex;
+    align-items: center
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px var(--inputColor);
+    padding: .8rem 1rem;
+    color:  var(--textColor)
+}
+
+
+.btn .icon{
+    margin-left: .5rem;
+}
+
+.btn:hover{
+    background-color: var(--paleGreen);
+    color: var(--primaryColor);
+}
+
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+.main__content{
+    height: 100%;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+.container1{
+    position: relative;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bgColor);
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px var(--greyText);
+}

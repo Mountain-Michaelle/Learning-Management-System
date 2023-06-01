@@ -11,7 +11,7 @@ const Home = () => {
     return(
         <div>
             <Slider />
-        
+
         <div className='container mt-4' >
             <div className="row ">
                 <h4 className='mb-1 mt-4'>Latest Courses <a href="#" className='float-end mb-5 px-3'>See all</a></h4>

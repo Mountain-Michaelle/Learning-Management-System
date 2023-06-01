@@ -1,0 +1,176 @@
+:root{
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(95, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%; 18%);
+    --textColor: hsl(224, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+
+    /* Fonts and Typography */
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+} 
+.sidebar{
+    background-color: var(--whiteColor);
+    box-shadow: 1px 0px 6px var(--greyText);
+    max-width: 18rem;
+    height: 100%;
+    gap: 3rem;
+    flex-direction: left;
+    overflow: auto;
+}
+
+.logo__div{
+    padding: 1.5rem 1.5rem 0;
+    cursor: pointer;
+}
+
+.logo__div > img{
+    max-width: 70px;
+    margin-right: .2rem;
+}
+.logo__div > h2{
+    font-size: var(--h2FontSize);
+    color: var(--PrimaryColor);
+}
+
+.menu__div, .setting__div{
+    .div__title{
+        font-size: var(--h3FontSize);
+        color: var(--blackColor);
+        padding: 0 1.5rem 1rem;
+    }
+    .menu__list{
+        .list__item{
+            padding: .2rem 1.5rem;
+            width: 100%;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                height: 0;
+                left: 0;
+                width: 3%;
+                bottom: 0;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                background:rgb(92, 118, 139);
+            }
+
+            .menu__link{
+                text-decoration: none;
+                color: var(--greyText);
+                font-weight: .5rem;
+                transition: 0s;
+                .icon{
+                    margin-right: .5rem;
+                };  
+            } 
+            &:hover .menu__link{
+                    color: rgb(39, 36, 228);
+                    transition: 0;
+                }
+
+                &:hover::before{
+                    height: 100%;
+                    transition: .4s ease;
+                    color:rgb(5, 43, 214);
+                }
+        }
+
+    }
+   
+}
+
+ .sidebar__card{
+        width:  100%;
+        padding: 1rem;
+        text-align: center;
+        position: relative;
+
+        .icon{
+            position: absolute;
+            background: var(--HoverColor);
+            border: 10px solid var(--whiteColor);
+            font-size: 3rem; 
+            border-radius: 50px;
+            top: -1rem;
+            right: 50%;
+            transform: translate(50%);
+            z-index: 100;
+        }
+
+        .card__content{
+            position: relative;
+            padding: 1rem;
+            background: var(--HoverColor);
+            border-radius: 8px;
+            overflow: hidden;
+            
+        .h3{
+            font-size: var(--h3FontSize);
+            margin-top: 1.2rem 0;
+            font-weight: 800;
+            color: var(--blackColor);
+        }
+        .p{
+            color: var(--textColor);
+            padding-bottom: 1rem;
+        }
+        .button{
+            border: none;
+            position: relative;
+            z-index: 1000;
+            background-color: var(--bgColor);
+        }
+
+        .circle1, .circle2{
+            position: absolute;
+            background: var(--paleGreen);
+            border-radius: 50%;
+            opacity: .7;
+        }
+        .circle1{
+            height: 100px;
+            width:  100px;
+            top: -50px;
+            left: -50px;
+        }
+
+            .circle2{
+                height: 150px;
+                width:  150px;
+                bottom: -50px;
+                right: -70px;
+                z-index: 1;
+        }
+    }
+
+        }
+
+
+
+
+
+
+@media (max-width: 750px) {
+    .logo__div > h2{
+        display: none;
+    }
+    .logo__div > img{
+        margin: 0 auto;
+        justify-self: center;
+        place-items: center;
+        width: 100%;
+    }
+}
