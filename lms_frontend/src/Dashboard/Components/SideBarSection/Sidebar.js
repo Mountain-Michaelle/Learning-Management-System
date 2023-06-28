@@ -1,6 +1,8 @@
 import React from 'react';
 import '../css/Sidebar.css';
-import myIcon from '../images/myicon.jpg.png';
+
+// Material UI Icons
+import myIcon from '../images/IMtech.png';
 import SpeedIcon from '@mui/icons-material/Speed';
 import DeliveryDiningIcon from '@mui/icons-material/DeliveryDining';
 import SchoolIcon from '@mui/icons-material/School';
@@ -11,13 +13,16 @@ import RssFeedIcon from '@mui/icons-material/RssFeed';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import WbIncandescentIcon from '@mui/icons-material/WbIncandescent';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
+import SettingsIcon from '@mui/icons-material/Settings';
+
+//React Routers
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return(
         <div className='sidebar grid'>
             <div className='logo__div flex'>
-                <img src={myIcon} alt="image name" />
-                <h2>IMTech</h2>
+                <img  className="img" src={myIcon} alt="image name" />
             </div>
 
             <div className='menu__div'>
@@ -27,14 +32,14 @@ const Sidebar = () => {
                 <ul className="menu__list grid">
                     <li className='list__item'>
                         <a href="#" className='menu__link flex'>
-                            <SpeedIcon className="icon" />
-                            <span className="small__text">Time</span>
+                           <Link to='/'><SpeedIcon className="icon" />
+                           <span className="small__text">Dashboard</span></Link> 
                         </a>
                     </li>
                     <li className='list__item'>
                         <a href="#" className='menu__link flex'>
-                            <SchoolIcon className="icon" />
-                            <span className="small__text">My Course</span>
+                           <Link to='/courses'> <SchoolIcon className="icon" />
+                            <span className="small__text">My Course</span></Link>
                         </a>
                     </li>
                     <li className='list__item'>
@@ -81,6 +86,12 @@ const Sidebar = () => {
                             <span className='small__text'>About Us</span>
                         </a>
                     </li>
+                    <li className="list__item">
+                        <a href="#" className="menu__link flex">
+                           <Link to='/settings'><SettingsIcon className='icon' />
+                            <span className='small__text'>Settings</span></Link> 
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -92,7 +103,6 @@ const Sidebar = () => {
                     <h3 className='h3'>Help Center</h3>
                     <p className='p'>Have trouble with IMTech, contact us for more information</p> 
                     <button className='button'>Go to help center</button>
-
                 </div>
             </div>
         </div>

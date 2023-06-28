@@ -4,12 +4,16 @@ from django.db import models
 
 # Teacher Model
 class Teacher(models.Model):
-    full_name = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=200)
     email = models.EmailField(max_length=100)
     password = models.CharField(max_length=100)
+    confirm_password = models.CharField(max_length=100)
     qualification = models.CharField(max_length=200)
-    mobile_no = models.CharField(max_length=20)
-    address = models.TextField()
+    mobile_no = models.CharField(max_length=12, blank=True)
+    country_name = models.CharField(max_length=50)
+    postCode = models.CharField(max_length=10, blank=True)
+    course_study = models.CharField(max_length=200)
+    address = models.TextField(blank=True)
 
 # Course Category Model
 class CourseCategory(models.Model):
@@ -25,6 +29,7 @@ class Course(models.Model):
     teacher = models.ForeignKey(Teacher, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     description = models.TextField()
+    duration = models.DurationField(null=True)
 
 class Student(models.Model):
     full_name = models.CharField(max_length=100)

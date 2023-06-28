@@ -45,3 +45,17 @@
     color:rgb(6, 209, 209);
     margin-top: 1rem;
 }
+
+.arrow{
+    color: white;
+    display: flex;
+    font-size: 3rem !important;
+    margin-right: 1.5rem;
+
+    &:hover{
+        color:  rgb(0, 255, 0);
+        transform: translateX(10px);
+        transition: .3s ease-in-out;
+    }
+    
+}

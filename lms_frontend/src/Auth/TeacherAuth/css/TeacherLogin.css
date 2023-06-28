@@ -1,0 +1,111 @@
+:root{
+    :root{
+        --PrimaryColor: hsl(94, 59%, 35%);
+        --HoverColor: #bdf094;
+        --paleGreen: hsl(95, 75%, 89%);
+        --whiteColor: hsl(0, 0%, 100%);
+        --blackColor: hsl(0, 0%; 18%);
+        --textColor: hsl(224, 1%, 48%);
+        --bgColor: hsl(220, 10%, 94%);
+        --greyText: rgb(190, 190, 190);
+        --inputColor: hsl(330, 12%, 97%);
+    
+        /* Fonts and Typography */
+    
+        --biggestFontSize: 2.5rem;
+        --h1FontSize: 1.5rem;
+        --h2FontSize: 1.25rem;
+        --h3FontSize: 1rem;
+        --normalFontSize: .938rem;
+        --smallFontSize: .813rem;
+        --smallestFontSize: .75rem;
+    
+        /* Default style */
+    
+    }
+}
+
+label{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.teacher__login{
+    color: white;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .heading{
+        padding: .7rem 0 1rem 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .login__card{
+        display: flex;
+        flex-flow: wrap row;
+        margin: auto;
+        box-shadow: 2px 3px 4px 2px rgb(255, 255, 255);
+        border-radius: 8px;
+        width: 50%;
+        justify-content: center;
+
+        .h1{
+            text-align: center;
+            padding-top: .7rem;
+            font-size: 1.5rem;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            letter-spacing: .4rem;
+            text-transform: capitalize;
+        }
+        .label{
+            display: flex;
+            font-size: 1.5rem;
+            padding-bottom: 0;
+            justify-content: flex-start;
+        }
+        .form{
+            width: 95%;
+            flex-flow: wrap row;
+            justify-content: center;
+            margin: 0 auto;
+        }
+        .input{
+            width: 100%;
+            padding: 2rem;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--inputColor);
+            background: black;
+        }
+        .bttn{
+            padding: 1rem;
+            width: 50%;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            color: white;
+            background: black;
+            text-transform: uppercase;
+            &:hover{
+                cursor: pointer;
+                color: var(--paleGreen);
+            }
+        }
+        
+        .register{
+            padding: 1rem;
+
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .teacher__login{
+        padding-top: 1rem;
+        .login__card{
+            width: 90%;
+        }
+    }
+}

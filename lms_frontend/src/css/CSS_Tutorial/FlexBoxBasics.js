@@ -1,5 +1,7 @@
 import React from 'react';
 import ImageDesc from '../../static/images/ImageDesc.png';
+import { Link } from 'react-router-dom';
+import KeyboardDouble from '@mui/icons-material/KeyboardDoubleArrowRight';
 
 
 const FlexBoxBasic = () => {
@@ -48,6 +50,12 @@ const FlexBoxBasic = () => {
                 <li>align-contents : <strong>This aligns items along the cross axis instead of the main axis</strong></li>
                 <li>align-content<strong>This is similar to justify-content with the difference being that it will align item along the cross axis instead of the main axis</strong></li>
             </ul>
+
+            <Link to="application" > <h2 style={{textAlign: 'center', 
+                                    padding: '1rem',
+                                    color: 'aqua',
+                                    width: '100%'}}><KeyboardDouble className='arrow' /> 
+                                        Closer Look</h2></Link>
         </div>
     )
 }

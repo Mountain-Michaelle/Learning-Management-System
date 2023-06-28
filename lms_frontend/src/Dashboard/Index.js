@@ -5,13 +5,18 @@ import Body from './Components/BodySection/Body';
 
 const Index = () => {
     return(
+        <>
         <div className='main__content'>
             <div className='container1'>
-
                <Sidebar />
                <Body />
             </div>
+
+            
         </div>
+        </>
+        
+       
     )
 }
 

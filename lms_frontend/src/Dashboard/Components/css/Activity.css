@@ -1,0 +1,101 @@
+
+:root{
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(95, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%; 18%);
+    --textColor: hsl(224, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+
+    /* Fonts and Typography */
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+
+    /* Default style */
+
+}
+
+
+.activity__section{
+    flex-basis: 50%;
+    .heading{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .h1{
+            font-size: var(--h1FontSize);
+            color: var(--blackColor);
+            font-weight: 700;
+        }
+        .btn{
+            border: 1px solid transparent;
+            font-weight: 600;
+            &:hover{
+                border: 1px solid var(--PrimaryColor);
+                
+            }
+        }
+    }
+
+    .sec__container{
+        margin-top: 1rem;
+        .single__customer{
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .img{
+                width: 40px;
+                height: 40px;
+                border-radius: 50px;
+                object-fit: cover;
+                box-shadow: 0 2px 4px rgb(0, 183, 255);
+                margin-right: 1rem;
+            }
+
+            .customer__details{
+                flex: 1;
+                
+                .name{
+                    font-size: var(--h3FontSize);
+                    font-weight: 600;
+                    display: block;
+                    color: var(--blackColor);
+                }
+
+                .small{
+                    font-style: italic;
+                    font-weight: 500;
+                    color: var(--textColor);
+                    margin-right: 1rem;
+                }
+            }
+            .duration{
+
+                .h3{
+                    font-size: var(--smallFontSize);
+                    color: var(--textColor);
+                    font-weight: 600; 
+                }
+            }
+        }
+    }
+ 
+}  
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 990px){
+    .activity__section{
+        
+    }
+}

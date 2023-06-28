@@ -1,0 +1,136 @@
+:root{
+    --PrimaryColor: hsl(94, 59%, 35%);
+    --HoverColor: #bdf094;
+    --paleGreen: hsl(95, 75%, 89%);
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(0, 0%; 18%);
+    --textColor: hsl(224, 1%, 48%);
+    --bgColor: hsl(220, 10%, 94%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: hsl(330, 12%, 97%);
+
+    /* Fonts and Typography */
+
+    --biggestFontSize: 2.5rem;
+    --h1FontSize: 1.5rem;
+    --h2FontSize: 1.25rem;
+    --h3FontSize: 1rem;
+    --normalFontSize: .938rem;
+    --smallFontSize: .813rem;
+    --smallestFontSize: .75rem;
+} 
+
+
+.settings{
+position: relative;
+padding: 1rem 1rem 0 1rem;
+margin: auto;
+width: 100%;
+height: 95vh;
+overflow: hidden;
+
+.setting__container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background: var(--bgColor);
+    box-shadow: 2px 2px 8px var(--greyText);
+    overflow: auto;
+    margin: 0 auto;
+    .sidebar{
+        overflow: auto;
+        height: 90vh;
+    }
+
+  .setting__div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+        height: 95vh;
+        .break{
+            width: 80%;
+            border: 1px solid var(--greyText);
+            margin: 1.5rem 0 0 1.7rem;
+        }
+        .h1{
+            padding: 1rem 0 0 1.7rem;
+        }
+        .profile{
+            padding: 0.02rem;
+            margin-top: 1.5rem;
+            width: 90%;
+
+            .image{
+                margin: 0 auto;
+                padding-bottom: 3rem;
+            }
+            .img{
+                width: 50px;
+                height:50px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .span{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                text-align: center;
+                border: .2px solid var(--bgColor);
+                padding: 1rem;
+                font-size: var(--h2FontSize);
+                font-weight: 500;
+                color: var(--blackColor);
+                overflow: auto;
+                gap: 1rem;
+
+                .icon{
+                    display: flex;
+                    flex-direction: column;
+                    color: var(--greyText);
+                    margin-right: 0;
+                }
+            }
+            .bg{
+                background: var(--paleGreen);
+                border-bottom: 0.5px solid rgb(228, 135, 135);
+                overflow: auto;
+                margin-bottom: 2rem;
+            }
+           
+        }
+    }   
+}
+   
+}
+
+@media screen and (max-width: 600px){
+
+    .setting__div{
+        width: 100%;
+        .profile{
+            .span{
+                flex-direction: column !important;
+                justify-content: left !important;
+
+
+                .icon{
+                    justify-content: center;
+                    margin: 0 auto;
+                }
+              
+            }
+            .bg{
+                    flex-direction: column;
+                }
+        }  
+    }
+}
+@media screen and (max-width: 500px){
+    .setting__container{
+        .sidebar{
+            overflow: hidden !important;
+            height: 100% !important;
+        }
+    }
+}

@@ -17,11 +17,4 @@ code {
   padding: 0;
   transition: .2s;
   
-  
-}
-
-.main__content{
-  width: 82%;
-  height: 100%;
-  padding: 2rem;
-}
+};

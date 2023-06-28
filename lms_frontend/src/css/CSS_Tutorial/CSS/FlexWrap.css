@@ -1,0 +1,84 @@
+.flex-wrap{
+}
+.container15{
+    border: 2px solid black;
+    display: flex;
+    margin: 0 2rem 1rem 1rem;
+    flex-direction: column;
+    height: 400px;
+    flex-wrap: wrap;
+
+    .item-1{
+        background: rgb(65, 65, 255);
+    }
+    .item-2{
+        background: rgb(255, 73, 73);
+
+    }
+    .item-3{
+        background: rgb(175, 175, 33);
+    };
+    .item-4{
+        background: rgb(255, 255, 66);
+    };
+    .item-5{
+        background: rgb(46, 46, 0);
+    };
+    .item-6{
+        background: rgb(255, 255, 0);
+    };
+    .item-7{
+        background: rgb(255, 116, 3);
+    };
+    .item-8{
+        background: rgb(0, 255, 0);
+    };
+    .item-9{
+        background: rgb(0, 0, 0);
+    };
+    .item-10{
+        background: rgb(255, 0, 0);
+    };
+    
+}
+
+{/* This for the flex-flow css styling */}
+.container16{
+    border: 2px solid black;
+    display: inline-flex;
+    margin: 0 2rem 1rem 1rem;
+    flex-flow: wrap row;
+
+    .item-1{
+        background: rgb(65, 65, 255);
+    }
+    .item-2{
+        background: rgb(255, 73, 73);
+
+    }
+    .item-3{
+        background: rgb(175, 175, 33);
+    };
+    .item-4{
+        background: rgb(255, 255, 66);
+    };
+    .item-5{
+        background: rgb(46, 46, 0);
+    };
+    .item-6{
+        background: rgb(255, 255, 0);
+    };
+    .item-7{
+        background: rgb(255, 116, 3);
+    };
+    .item-8{
+        background: rgb(0, 255, 0);
+    };
+    .item-9{
+        background: rgb(0, 0, 0);
+    };
+    .item-10{
+        background: rgb(255, 0, 0);
+    };
+    
+}
