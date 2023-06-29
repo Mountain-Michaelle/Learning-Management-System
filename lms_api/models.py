@@ -7,12 +7,12 @@ class Teacher(models.Model):
     full_name = models.CharField(max_length=200)
     email = models.EmailField(max_length=100)
     password = models.CharField(max_length=100)
-    confirm_password = models.CharField(max_length=100)
+    password2 = models.CharField(max_length=100)
     qualification = models.CharField(max_length=200)
     mobile_no = models.CharField(max_length=12, blank=True)
-    country_name = models.CharField(max_length=50)
-    postCode = models.CharField(max_length=10, blank=True)
-    course_study = models.CharField(max_length=200)
+    nationality = models.CharField(max_length=50)
+    post_code = models.CharField(max_length=10, blank=True)
+    skills = models.CharField(max_length=200)
     address = models.TextField(blank=True)
 
 # Course Category Model

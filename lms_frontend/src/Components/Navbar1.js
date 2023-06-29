@@ -6,12 +6,16 @@ import '../css/Navbar1.css';
 import {Link} from 'react-router-dom';
 import CssTutorial from '../css/CSS_Tutorial/CssTutorial';
 import React from 'react';
-
+const teacherLoginStatus = localStorage.getItem('teacherLoginStatus')
 function Navbar1() {
   return (
     <Navbar className="navbar1" bg="dark" variant="dark" expand="lg">
       <Container className="">
-        <Navbar.Brand ><Link style={{textDecoration:"none", color:"blue"}} to="/">IMTech</Link></Navbar.Brand>
+        {teacherLoginStatus ? 
+          <Navbar.Brand ><Link style={{textDecoration:"none", color:"blue"}} to="/dashboard">IMTech</Link></Navbar.Brand>
+          :
+          <Navbar.Brand ><Link style={{textDecoration:"none", color:"blue"}} to="/">IMTech</Link></Navbar.Brand>
+        }
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -27,12 +31,25 @@ function Navbar1() {
               <NavDropdown.Item href="#action/3.4">
                 Your Attendances
               </NavDropdown.Item>
+
+              {/* Tenary Operator here */}
+              {teacherLoginStatus ?
+              <NavDropdown.Item>
+                <Link style={{textDecoration: "none"}} to="/logoutteacher">log out</Link>
+              </NavDropdown.Item>
+              :
+               <>
               <NavDropdown.Item>
               <Link style={{textDecoration: "none"}} to="auth/login">Login</Link>
               </NavDropdown.Item>
               <NavDropdown.Item>
                 <Link style={{textDecoration: "none"}} to="/auth">Sign Up</Link>
               </NavDropdown.Item>
+              </>
+              }
+              {/* end Tenary Operator here */}
+             
+              
             </NavDropdown>
            
           </Nav>   

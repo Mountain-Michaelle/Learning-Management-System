@@ -8,6 +8,6 @@ class TeacherSerializer(serializers.ModelSerializer):
         fields = [
                   'id',
                   'full_name', 'email', 
-                  'password', 'qualification', 
-                  'mobile_no', 'address'
+                  'password', 'password2', 'qualification', 
+                  'mobile_no', 'skills', 'nationality'
                 ]
