@@ -60,10 +60,12 @@ const TeacherRegister = () => {
             <div className='register__card'>
                 <h2 className='h2'> Register a Teacher Account</h2>
                 {
-                    teacherData.status==='success' ?
+                    teacherData.status==='success' && 
                     <h4 style={{color: 'green', fontSize:'1.5rem', textAlign:'center'}}>You have successfully registered</h4>
-                    :
-                    <h5 style={{color: 'red', fontSize:'1.2rem', h4Hover: 'white', textAlign: 'center' }}> erro! <br /> check your datas or your selections well!</h5>
+                    }
+                {
+                    teacherData.status==='error' && <h5 style={{color: 'red', fontSize:'1.2rem', h4Hover: 'white', textAlign: 'center' }}> erro! <br /> check your datas or your selections well!</h5>
+
                 }
                 <form className='form'>
                     <label className='label'>Full name</label>
