@@ -2,6 +2,7 @@ import React from 'react';
 import '../Auth/CSS/Signup.css';
 import '../Auth/CSS/Auth.css';
 import '../Auth/CSS/Login.css';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return(
@@ -17,7 +18,7 @@ const Login = () => {
             <button className='login__button'>login</button>
             </form>
             <div className='log'>
-                <p>Some text here</p>
+                <p> Don't have an account yet? <Link to="">Sign Up here</Link></p>
             </div>
         </div> 
         </div>

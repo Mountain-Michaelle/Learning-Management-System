@@ -13,8 +13,7 @@ const Index = () => {
 
             
         </div>
-        
-        
+           
        
     )
 }

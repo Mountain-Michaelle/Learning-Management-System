@@ -1,8 +1,10 @@
-.landing__page{
+.landing__page {
     width:  100%;
     color: white;
     padding: 2rem;
-    .heading{
+}
+
+.landing__page .headingz{
         width: 80%;
         margin: 0 auto;
         color: white;
@@ -10,36 +12,36 @@
         flex-flow: wrap column;
         justify-content: center;
         align-items: center;
-        .h2{
-            text-align: center;
-            font-size: 3rem;
-            color: white;
-        }
-
-        .img{
-            width: 50%;
-        }
-        .line1{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .line{
-                width: 50%;
-                height: 2px;
-                background: white;
-            }
-
-            .h4{
-                text-align: center;
-                font-size: 1.5rem;
-                width: 100%;
-            }
-            
-        }
     }
 
-    .buttons{
+  .headingz > .h2{
+            text-align: center;
+            font-size: 4rem;
+            color: white;
+        }
+ .img{
+            width: 45%;
+        }
+        
+.line1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width: 50%;
+    height: 2px;
+    background: white;
+}
+
+.h4{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.buttons{
         width: 80% !important;
         display: flex;
         gap: 1.5rem;
@@ -47,170 +49,159 @@
         justify-content: center;
         align-items: center;
         padding: 1.2rem;
+}
 
-        .bttn{
-            width: 100% !important;
-            font-size: 2rem;
-            padding: 1rem;
-            background: black;
-            color: white;
-            box-shadow: 2px 3px 10px 0.2px rgb(15, 155, 190);
-            border-radius: 20px;
+ .bttn{
+        width: 100% !important;
+        font-size: 2rem;
+        padding: 1rem;
+        background: black;
+        color: white;
+        box-shadow: 2px 3px 10px 0.2px rgb(15, 155, 190);
+        border-radius: 20px;      
+    }
 
-            &:hover{
+.bttn:hover{
                 color: aqua;
             }
-        }
-    }
+
 
     .courses{
     padding-top: 2rem;
-        .h2{
-            font-size: 1.5rem;
-            font-weight: 700;
-            text-transform: capitalize;
-            color: rgb(238, 255, 0);
-            text-align: center;
-        }
-        .h3{
-            text-transform: uppercase;
-            font-size: 2rem;
-        }
-    .card__container{
+    }
+
+
+.courses > .h2{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: rgb(238, 255, 0);
+    text-align: center;
+}
+
+.h3{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+    
+.card__container{
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        .landing__cards{
-            width: 100%;
-            width: 23%;;
-            border-radius: 10px;
-            box-shadow: 3px 10px 15px 2.4px rgb(15, 155, 190);
+    }
 
-            .img{
-                display: flex;
-                border-radius: 10px;
-                width: 100%;
-            }
-            .ptag{
-                padding: .5rem 0 0 .5rem;
-                align-items: left;
-                font-size: 1.5rem;
-                font-weight: 799;
-            }
+.landing__cards{
+    width: 100%;
+    width: 23%;;
+    border-radius: 10px;
+    box-shadow: 3px 10px 15px 2.4px rgb(15, 155, 190);
+}
+
+ .landing__cards > .img{
+            display: flex;
+            border-radius: 10px;
+            width: 100%;
         }
-    } 
+.ptag{
+    padding: .5rem 0 0 .5rem;
+    align-items: left;
+    font-size: 1.5rem;
+    font-weight: 799;
     }
     
-}
 
 @media screen and (max-width: 900px){
-    .landing__page{
-        .courses{
-            .h2{
-                font-size: 1.2rem;
-            }
-            .h3{
-                font-size: 1.5rem;
-            }
-        }
-        .heading{
-            .h2{
+        
+.courses > .h2{
+    font-size: 1.2rem;
+    }
+.courses > .h3{
+        font-size: 1.5rem;
+    }
+.heading > .h2{
                 font-size: 2.5rem;
             }
-            .img{
-                width: 60%;
+.heading > .img{
+                width: 80%;
             }
-        }
-
-        .buttons{
-            .bttn{
+.buttons > .bttn{
                 font-size: 1rem;
             }
-        }
-    }
-    .card__container{
+
+.card__container{
         display: flex;
         flex-direction: row;
-        .landing__cards{
-            width: 80%;
-            .ptag{
-                font-size: 1rem;
-            }
-        }
     }
-}
 
+.landing__cards{
+            width: 35%;
+    }
+
+.ptag{
+    font-size: 1rem;
+     }
+}
 
 @media screen and (max-width: 500px){
-    .landing__page{
 
-        .courses{
-            .h2{
-                font-size: 1rem;
-            }
-            .h3{
-                font-size: 1.2rem;
-            }
+.courses > .h2{
+        font-size: 1rem;
+    }
+.courses > .h3{
+        font-size: 1.2rem;
+     }
 
-            .card__container{
-                display: flex;
-                flex-direction: row;
-                .landing__cards{
-                    width: 60%;
-                    .ptag{
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
+.card__container{
+    display: flex;
+    flex-direction: row;
+}
 
-        .heading{
-            .h2{
-                font-size: 1.8rem;
-            }
-        }
+.landing__cards{
+    width: 60%;
+}
+.ptag{
+        font-size: 1rem;
+    }
 
-        .buttons{
-            width: 100%;
-            .bttn{
-                font-size: .8rem;
-            }
-        }
+.heading >.h2{
+        font-size: 1.8rem;
+    }
+    
+
+.buttons{
+    width: 100%;
+}
+
+.bttn{
+        font-size: .8rem;
     }
 }
 
-
 @media screen and (max-width: 650px){
-    .landing__page{
+.card__container{
+    display: flex;
+    flex-direction: row;
+}
+    .landing__cards{
+        width: 50%;
+    }
+.ptag{
+    font-size: 1rem;
+    text-align: center;
+}
+.headingz > .h2{
+        font-size: 1.8rem;
+    }
 
-        .courses{
-            .card__container{
-                display: flex;
-                flex-direction: row;
-                .landing__cards{
-                    width: 25%;
-                    .ptag{
-                        font-size: 1rem;
-                        text-align: center;
-                    }
-                }
-            }
-        }
-        .heading{
-            .h2{
-                font-size: 1.8rem;
-            }
-        }
+.buttons{
+    width: 100%;
+}
 
-        .buttons{
-            width: 100%;
-            .bttn{
-                font-size: 1rem;
-            }
-        }
+.bttn{
+        font-size: 1rem;
     }
 }
 
@@ -220,39 +211,34 @@
         text-align: center;
         overflow: hidden;
     }
-    .landing__page{
-        .courses{
-            .h2{
-                font-size: 1.5rem;
-            }
-            .h3{
-                font-size: 2rem;
-            }
-            .card__container{
-               .landing__cards{
-                width: 70%;
-                .ptag{
-                    font-size: 1.5rem;
-                    text-align: center;
-                }
-            }  
-            }
-           
-        }
-        .heading{
-            .h2{
-                font-size: 2.5rem;
-            }
-        }
 
-        .buttons{
-            width: 100%;
-            display: flex;
-            flex-flow: wrap row;
-            .bttn{
-                text-align: center;
-                font-size: 1.5rem;
-            }
-        }
+.courses >.h2{
+        font-size: 1.5rem;
+    }
+.courses > .h3{
+        font-size: 2rem;
+    }
+.landing__cards{
+width: 90%;
+}
+
+.ptag{
+    font-size: 1.5rem;
+    text-align: center;
+}
+    
+.headingz > .h2{
+    font-size: 2.5rem;
+    }
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+}
+ .bttn{
+        text-align: center;
+        font-size: 1.5rem;
     }
 }
+

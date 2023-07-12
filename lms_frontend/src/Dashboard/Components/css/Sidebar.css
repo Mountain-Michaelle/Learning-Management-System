@@ -50,123 +50,126 @@ a{
     max-width: 120px;
     margin: 0 auto;
 }
+
 .logo__div > h2{
     font-size: var(--h2FontSize);
     color: var(--PrimaryColor);
 }
 
-.menu__div, .setting__div{
-    .div__title{
-        font-size: var(--h3FontSize);
-        color: var(--blackColor);
-        padding: 0 1.5rem 1rem;
-    }
-    .menu__list{
-        .list__item{
-            padding: .2rem 1.5rem;
-            width: 100%;
-            position: relative;
-
-            &::before{
-                position: absolute;
-                content: '';
-                height: 0;
-                left: 0;
-                width: 3%;
-                bottom: 0;
-                border-top-right-radius: 10px;
-                border-bottom-right-radius: 10px;
-                background:rgb(92, 118, 139);
-            }
-
-            .menu__link{
-                text-decoration: none;
-                color: var(--greyText);
-                font-weight: .5rem;
-                transition: 0s;
-                .icon{
-                    margin-right: .5rem;
-                };  
-            } 
-            &:hover .menu__link{
-                    color: rgb(39, 36, 228);
-                    transition: 0;
-                }
-
-                &:hover::before{
-                    height: 100%;
-                    transition: .4s ease;
-                    color:rgb(5, 43, 214);
-                }
-        }
-
-    }
-   
+.div__title{
+    font-size: var(--h3FontSize);
+    color: var(--blackColor);
+    padding: 0 1.5rem 1rem;
 }
 
- .sidebar__card{
-        width:  100%;
-        padding: 1rem;
-        text-align: center;
-        position: relative;
 
-        .icon{
-            position: absolute;
-            background: var(--HoverColor);
-            border: 10px solid var(--whiteColor);
-            font-size: 3rem; 
-            border-radius: 50px;
-            top: -1rem;
-            right: 50%;
-            transform: translate(50%);
-            z-index: 100;
-        }
+.list__item{
+    padding: .2rem 1.5rem;
+    width: 100%;
+    position: relative;
+}
 
-        .card__content{
-            position: relative;
-            padding: 1rem;
-            background: var(--HoverColor);
-            border-radius: 8px;
-            overflow: hidden;
-            
-        .h3{
-            font-size: var(--h3FontSize);
-            margin-top: 1.2rem 0;
-            font-weight: 800;
-            color: var(--blackColor);
-        }
-        .p{
-            color: var(--textColor);
-            padding-bottom: 1rem;
-        }
-        .button{
-            border: none;
-            position: relative;
-            z-index: 1000;
-            background-color: var(--bgColor);
-        }
+.list__item > &::before{
+    position: absolute;
+    content: '';
+    height: 0;
+    left: 0;
+    width: 3%;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background:rgb(92, 118, 139);
+}
 
-        .circle1, .circle2{
-            position: absolute;
-            background: var(--paleGreen);
-            border-radius: 50%;
-            opacity: .7;
-        }
-        .circle1{
-            height: 100px;
-            width:  100px;
-            top: -50px;
-            left: -50px;
-        }
-
-            .circle2{
-                height: 150px;
-                width:  150px;
-                bottom: -50px;
-                right: -70px;
-                z-index: 1;
-        }
+.menu__link{
+    text-decoration: none;
+    color: var(--greyText);
+    font-weight: .5rem;
+    transition: 0s;
+   
+}  
+.menu__link > .icon{
+    padding-right: .01rem;
+    margin: 0 auto;
+    };  
+ .list__item:hover .menu__link{
+        color: rgb(39, 36, 228);
+        transition: 0;
     }
+
+    .list__item:hover::before{
+        height: 100%;
+        transition: .4s ease;
+        color:rgb(5, 43, 214);
+    }
+
+   
+
+.sidebar__card{
+width:  100%;
+padding: 1rem;
+text-align: center;
+position: relative;
+}
+
+.sidebar__card > .icon{
+    position: absolute;
+    background: var(--HoverColor);
+    border: 10px solid var(--whiteColor);
+    font-size: 3rem; 
+    border-radius: 50px;
+    top: -1rem;
+    right: 50%;
+    transform: translate(50%);
+    z-index: 100;
+}
+
+.card__content{
+    position: relative;
+    padding: 1rem;
+    background: var(--HoverColor);
+    border-radius: 8px;
+    overflow: hidden;
+}
+    
+.h3{
+    font-size: var(--h3FontSize);
+    margin-top: 1.2rem 0;
+    font-weight: 800;
+    color: var(--blackColor);
+}
+
+.p{
+    color: var(--textColor);
+    padding-bottom: 1rem;
+}
+
+.button{
+    border: none;
+    position: relative;
+    z-index: 1000;
+    background-color: var(--bgColor);
+}
+
+.circle1, .circle2{
+    position: absolute;
+    background: var(--paleGreen);
+    border-radius: 50%;
+    opacity: .7;
+}
+.circle1{
+    height: 100px;
+    width:  100px;
+    top: -50px;
+    left: -50px;
+}
+
+.circle2{
+height: 150px;
+width:  150px;
+bottom: -50px;
+right: -70px;
+z-index: 1;
 }
 
 /* Hide the scroll bar */
@@ -186,54 +189,51 @@ a{
 }
 
 @media screen and (max-width: 745px) {
-    .sidebar{
-        overflow: hidden;
-        padding: 0;
-        justify-content: center;
-        .logo__div{
-            text-align: center;
-            margin: auto;
-            .img{
-                max-width: 50px;
-            }
-        }
+.sidebar{
+overflow: hidden;
+padding: 0;
+justify-content: center;
+}
 
-        .menu__div{
-
-            .menu__list{
-                .list__item{
-                    .menu__link{
-                        justify-content: center;
-                        .small__text{
-                            display: none;
-                        }
-                    }
-                }
-            }
-            .div__title{
-                display: none;
-            }
-        }
-
-        .setting__div{
-            .div__title{
-                    display: none;
-
-            }
-            .menu__list{
-                justify-content: center;
-                .list__item{
-                    .menu__link{
-                        .small__text{
-                            display: none;
-                        }
-                    }
-                }
-            }
-        }
-
-        .sidebar__card{
-            display: none;
-        }
+.logo__div{
+    text-align: center;
+    margin: auto;
+    width: 110px;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: -1.2rem;
+}
+.logo__div > .img{
+        max-width: 50% !important;
     }
+  
+.menu__link{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+.small__text{
+    display: none;
+}
+
+.div__title{
+    display: none;
+}
+
+.div__title{
+        display: none;
+
+}
+.menu__list{
+    justify-content: center;
+}
+.small__text{
+    display: none;
+}
+
+.sidebar__card{
+    display: none;
+}
 }

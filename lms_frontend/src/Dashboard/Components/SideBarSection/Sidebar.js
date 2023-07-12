@@ -43,10 +43,11 @@ const Sidebar = () => {
                         </a>
                     </li>
                     <li className='list__item'>
-                        <a href="#" className='menu__link flex'>
+                        <Link href="#" className='menu__link flex'>
+                            {/* <div className='line flex'></div> */}
                             <AccessibilityNewIcon className="icon" />
                             <span className="small__text">Attendances</span>
-                        </a>
+                        </Link>
                     </li>
                     <li className="list__item">
                         <a href="#" className="menu__link flex">

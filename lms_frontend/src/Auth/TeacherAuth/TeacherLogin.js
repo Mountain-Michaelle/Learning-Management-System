@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './css/TeacherLogin.css';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const baseURL = 'http://127.0.0.1:8000/teacher-login/';
@@ -22,15 +22,22 @@ const TeacherLogin = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+
         const TeacherFormData = new FormData();
         TeacherFormData.append('email', teacherLoginData.email)
         TeacherFormData.append('password', teacherLoginData.password)
+
+        // Axios calls 
         axios.post(baseURL, TeacherFormData)
         .then(response => {
             console.log(response.data)
             if(response.data.login===true){
                 localStorage.setItem('teacherLoginStatus', true)
-                navigate('/dashboard')
+                localStorage.setItem('teacherId', response.data.teacher_id)
+                localStorage.setItem('teacherName', response.data.teacher_name)
+                localStorage.setItem('teacherCourse', response.data.teacher_course)
+
+                navigate('/teacher-index')
             }
         })
         .catch(error => {
@@ -41,12 +48,12 @@ const TeacherLogin = () => {
         // When teacher want to login again, it will automatically redirect them to the dashboad
     const teacherLoginStatus = localStorage.getItem('teacherLoginStatus')
     if(teacherLoginStatus==='true'){
-        window.location.href="/dashboard"
+        window.location.href="/teacher-index"
     }
 
     return(
         <div className="teacher__login">
-            <div className='heading'>
+            <div className='heading2'>
                 <h2>Teachers Panel</h2>
             </div>
             

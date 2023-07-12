@@ -1,0 +1,168 @@
+.flex__item{
+    display: flex;
+    flex-direction: column;
+}
+.flex__item .h2{
+    text-align: center;
+    padding: 2rem;
+    color: rgb(110, 73, 4);
+}
+
+
+.codes{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background-color: black;
+    width: 50%;
+    height: 50px;
+    border: 1px solid rgb(138, 128, 128);
+    border-radius: 3px;
+    color: white;
+}
+
+code{
+    color: rgb(216, 216, 216);
+    padding: .3rem;
+}
+.order{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(216, 216, 216);
+    width: 90%;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.order  h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 1rem;
+}
+
+.cont{
+    padding: 2rem;
+}
+
+.containers1 {
+    border: 2px solid black;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.flex__items {
+    color: black;
+    font-weight: 500;
+    padding: .5rem;
+}
+
+.item1{
+background: red;
+}
+.item1{
+ background: red;
+}
+
+.item2{
+background: rgb(153, 0, 0);
+order: 1;
+}
+
+.item2{
+    background: rgb(117, 0, 0);
+}
+.item3{
+    background: rgb(255, 255, 0);
+}
+.item4{
+    background: rgb(77, 77, 49);
+}
+.item5{
+    background: rgb(0, 135, 145);
+}
+.item6{
+    background: rgb(0, 255, 85);
+    order: 2;
+}
+.item7{
+    background: rgb(0, 4, 255);
+}
+.item8{
+    background: rgb(0, 195, 255);
+}
+
+
+/**  Flex Grow CSS Styling **/
+
+.flex__grow{
+    background: rgb(230, 230, 228);
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 2rem;
+
+}
+
+
+.flex__grow{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.flex__grow .h3{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+.containers11{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 2px solid rgb(75, 75, 0);
+}
+
+.flex__itemss{
+    font-weight: 500;
+    padding: .7rem;
+    flex-shrink: 0;
+    
+}
+.items1{
+    background: aqua;
+}
+.items2{
+    background: rgb(255, 0, 0);
+}
+.items3{
+    background: rgb(0, 0, 0);
+}
+.items4{
+    background: rgb(255, 0, 0);
+}
+.items5{
+    background: rgb(0, 125, 134);
+}
+.items6{
+    background: rgb(0, 255, 85);
+}
+.items7{
+    background: rgb(0, 4, 255);
+}
+.items8{
+    background: rgb(0, 195, 255);
+}
+
+/** Flex Shrink Styling **/
+
+.containers01{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.flex__items1{
+    padding: .7rem;
+    flex-shrink: 0;
+}

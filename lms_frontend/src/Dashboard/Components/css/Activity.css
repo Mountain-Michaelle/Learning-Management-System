@@ -26,34 +26,45 @@
 
 
 .activity__section{
-    flex-basis: 50%;
-    .heading{
+    flex-basis: 50%;   
+}  
+
+.activity__section .heading{
         display: flex;
         width: 100%;
         justify-content: space-between;
 
-        .h1{
-            font-size: var(--h1FontSize);
-            color: var(--blackColor);
-            font-weight: 700;
-        }
-        .btn{
+    }
+.activity__section .heading .btn{
             border: 1px solid transparent;
+            padding-right: 1rem;
             font-weight: 600;
             &:hover{
                 border: 1px solid var(--PrimaryColor);
                 
             }
         }
+.activity__section .heading .h1{
+            font-size: var(--h1FontSize);
+            color: var(--blackColor);
+            font-weight: 700;
+        }
+
+
+.sec__container{
+        margin-top: 1rem;
     }
 
-    .sec__container{
-        margin-top: 1rem;
-        .single__customer{
+.single__customer{
             align-items: flex-start;
             justify-content: space-between;
 
-            .img{
+            
+
+            
+        }    
+
+.single__customer .img{
                 width: 40px;
                 height: 40px;
                 border-radius: 50px;
@@ -62,36 +73,28 @@
                 margin-right: 1rem;
             }
 
-            .customer__details{
-                flex: 1;
-                
-                .name{
-                    font-size: var(--h3FontSize);
-                    font-weight: 600;
-                    display: block;
-                    color: var(--blackColor);
-                }
-
-                .small{
-                    font-style: italic;
-                    font-weight: 500;
-                    color: var(--textColor);
-                    margin-right: 1rem;
-                }
-            }
-            .duration{
-
-                .h3{
-                    font-size: var(--smallFontSize);
-                    color: var(--textColor);
-                    font-weight: 600; 
-                }
-            }
-        }
+ .duration .h3{
+        text-transform: lowercase;
+        font-size: .6rem;
+        color: var(--textColor);
+        font-weight: 600; 
     }
- 
-}  
+.customer__details{
+                flex: 1;    
+            } 
+.name{
+    font-size: var(--h3FontSize);
+    font-weight: 600;
+    display: block;
+    color: var(--blackColor);
+}
 
+.customer__details .small{
+    font-style: italic;
+    font-weight: 500;
+    color: var(--textColor);
+    margin-right: 1rem;
+}
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 990px){

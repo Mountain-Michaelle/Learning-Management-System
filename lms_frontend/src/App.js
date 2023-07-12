@@ -22,6 +22,10 @@ import TeacherRegister from './Auth/TeacherAuth/TeacherRegister';
 import TeacherAuth1 from './Auth/TeacherAuth/TeacherAuth1';
 import LanderPage from './Auth/LanderPage';
 import TeacherLogout from './Auth/TeacherAuth/TeacherLogout';
+import FlexItem from './css/CSS_Tutorial/FlexItem';
+import TeacherIndex from './Dashboard/Components/TeacherDashboard/TeacherIndex';
+import TeacherAddCourse from './Dashboard/Components/TeacherDashboard/TeacherAddCourse';
+import TeacherCourse from './Dashboard/Components/TeacherDashboard/TeacherCourses';
 
 function App() {
   return (
@@ -44,6 +48,10 @@ function App() {
         <Route path="/teacherauth" element={<TeacherAuth />} />
         <Route path="/teacherauth/register" element={<TeacherAuth1 />} />
         <Route path="/logoutteacher" element={<TeacherLogout />} />
+        <Route path='/css-tutorial/flex-item' element={<FlexItem />} />
+        <Route path='/teacher-index' element={<TeacherIndex />} />
+        <Route path='/add-course' element={<TeacherAddCourse />} />
+        <Route path='/course-list' element={<TeacherCourse />} />
         
       </Routes>
     </div>

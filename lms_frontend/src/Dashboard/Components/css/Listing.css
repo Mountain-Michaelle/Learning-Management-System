@@ -27,37 +27,39 @@
 .listing__section{
     flex-basis: 70%;
     background: url('backgrd.png') no-repeat  var(--paleGreen) center / cover;
-
-    .heading{
+} 
+.heading{
         width: 100%;
         justify-content: space-between;
         background-color: rgb(241, 241, 241);
-        padding-bottom: 1rem;
-        .h1{
+        padding-bottom: 1rem;  
+    }
+
+ .heading > .h1{
             font-size: var(--h1FontSize);
             color: var(--blackColor);
             font-weight: 700;
             
         }
-        .btn{
+ .heading > .btn{
             border: 1px solid transparent;
             font-weight: 700;
         }
-
-        .btn:hover{
+.heading > .btn:hover{
             background: var(--paleGreen);
             border: 1px solid var(--PrimaryColor);
         }
-    }
 
-    .section__container{
+
+        {/** Section Container **/}
+
+.section__container{
         width: 100%;
         gap: 1rem;
         flex-wrap: wrap;
-        justify-content: space-between;
-        
-        
-        .single__item{
+        justify-content: space-between;     
+    }
+.single__item{
             position: relative;
             width: 150px;
             height: 170px;
@@ -68,149 +70,143 @@
             border-radius: 10px;
             background: var(--itemBgColor);
             transition: .8s ease in ease-in-out;
-
-            &:hover{
+        }   
+.single__item:hover{
                 background:hsl(0, 0%, 0%);
                 box-shadow: 0 3px 2px rgb(121, 121, 2);
                 color: white;
                 transition: .5s ease;
-
-            }
         }
 
-        .img{
-            max-width: 110px; 
-            padding-bottom: 4px;
-            cursor: pointer;
-        }
-        .icon{
+.section__container  .img{
+    max-width: 110px; 
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+ .section__container .icon{
             position: absolute;
             top: 10px;
             right: 10px;
             color: var(--PrimaryColor);
-            &:hover{
-                color: yellow;
-            }
+            
         }
 
-        .h3{
+  .section__container .icon:hover{
+                color: yellow;
+            }
+        
+.single__item .h3{
             font-size: var(--h3FontSize);
             color: rgb(50, 61, 65);
             padding: 1rem 0;
             font-weight: 700;
             cursor: pointer;
 
-            &:hover{
-                color: white;
-            }
         }
-
-
-    }
-
-    .sellers{
+.single__item .h3:hover{
+    color: white;
+}
+.sellers{
         width: 100%;
         justify-content: space-between;
         gap: 1rem;
         align-items: flex-start;
         background: var(--paleGreen);
-
-        .topStudent__section{
-            background: rgb(0, 174, 255);
-            .heading{
-                background: var(--paleGreen);
-                padding: 1rem 0;
-
-                .btn{
-                    padding: .4rem .2rem;
-                }
-                .h3{
-                    font-size: 1.4rem;
-                    color: var(--blackColor);
-                    font-weight: 700;
-                }
-            }
-            .card{
-                display: flex;
-                flex-direction: row;
-                background: var(--whiteColor);
-                padding: 1rem 1.5rem;
-                border-radius: 1rem;
-                gap: 1rem;
-                box-shadow: 0 2px 4px var(--inputColor);
-                .users{
-                    padding-left: 1rem;
-                    border-right: 2.5px solid var(--greyText);
-
-                    .img{
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50px;
-                        object-fit: cover;
-                        border: 2px solid var(--inputColor);
-                        &:hover{
-                            transform: translateY(-10px);
-                            cursor: pointer;
-                            transition: .3s ease; 
-                        }
-                    }
-                }
-
-                .card__text{
-                    display: flex;
-                    .span{
-                        color: '';
-                    }
-                }
-            }
-
-        }
     }
+.topStudent__section{
+            background: rgb(0, 174, 255);   
+        }
+.topStudent__section .heading{
+    background: var(--paleGreen);
+    padding: 1rem 0;
+  
+            } 
+
+.topStudent__section .heading .btn{
+        padding: .4rem .2rem;
+    }
+
+ .topStudent__section .heading .h3{
+        font-size: 1.4rem;
+        color: var(--blackColor);
+        font-weight: 700;
+    }
+            
+.card{
+    display: flex;
+    flex-direction: row;
+    background: var(--whiteColor);
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0 2px 4px var(--inputColor); 
+
 }
 
+.users{
+    padding-left: 1rem;
+    border-right: 2.5px solid var(--greyText);   
+}
+
+.users .img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    object-fit: cover;
+    border: 2px solid var(--inputColor);
+    &:hover{
+        transform: translateY(-10px);
+        cursor: pointer;
+        transition: .3s ease; 
+    }
+}
+.card__text{
+display: flex;
+}
+
+.card__text .span{
+    color: '';
+}
 /* MEDIA QUERIES */
 
 
 @media screen and (max-width: 990px){
-    .listing__section{
-        .sellers{
-            .card{
-                flex-direction: column !important;
-            }
-        }
+.sellers .card{
+        flex-direction: column !important;
+    } 
 
-        .section__container{
-            .single__item{
-                width: 200px !important;
-            }
-        }
+.single__item{
+        width: 200px !important;
+        margin: 0 auto;
     }
 }
 
 @media screen and (max-width: 490px){
-    .listing__section{
-        .sellers{
+.listing__section .sellers{
             flex-direction: column;
-
-            .h3{
+           
+        }   
+        
+.sellers .h3{
                 margin: auto;
             }
-            .btn{
+
+ .sellers .btn{
                 display: none;
-            }
-            .card{
+            } 
+
+ .sellers .card{
                 flex-direction: row !important;
             }
-        }
-    }
+            
 }
 
 @media screen and (max-width: 650px){
-    .listing__section{
-        .single__item{
+   .listing__section .single__item{
             margin: 0 auto !important;
             align-items: center;
             justify-content: center;
+            width: 80% !important;
         }
-    }
 }

@@ -1,21 +1,22 @@
 .flexBox__display{
     padding: 2rem;
     display: flex;
-
-    .h2{
-        text-align: center;
-        color: rgb(4, 99, 99);
-        border: 1px solid aqua;
-        width: 50%;
-        margin: 0 auto;
-        padding: 1rem;
-        text-transform: capitalize;
-    }
-
-    .h3{
-        text-align: center;
-    }
 }
+
+.flexBox__display .h2{
+    text-align: center;
+    color: rgb(4, 99, 99);
+    border: 1px solid aqua;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.flexBox__display .h3{
+    text-align: center;
+}
+
 .flex-item{
     color: white;
     font-size: 1.5rem;
@@ -26,6 +27,7 @@
     border: 2px solid black;
     display: inline-flex;
     margin: 0 2rem 1rem 1rem;
+}
 
     .item-1{
         background: rgb(65, 65, 255);
@@ -59,8 +61,10 @@
         background: rgb(255, 0, 0);
     };
     
-}
-.h5{
+
+
+
+.desc .h5{
     padding-left: 1rem;
 }
 
@@ -69,53 +73,53 @@
 }
 
 /*** Next Propery ***/
-.h2{
+article .h2{
         text-align: center;
     }
 .flex__direction{
         padding: 1rem;
-    .container23{
+    
+}
+.container23{
         border: 2px solid red;
         display: inline-flex;
         flex-direction: flex;
-
-        .flex-items{
-            padding: 1.5rem;
-        }
-        .items-1{
-            background: rgb(65, 65, 255);
-        }
-        .items-2{
-            background: rgb(255, 73, 73);
-    
-        }
-        .items-3{
-            background: rgb(175, 175, 33);
-        };
-        .items-4{
-            background: rgb(255, 255, 66);
-        };
-        .items-5{
-            background: rgb(46, 46, 0);
-        };
-        .items-6{
-            background: rgb(255, 255, 0);
-        };
-        .items-7{
-            background: rgb(255, 116, 3);
-        };
-        .items-8{
-            background: rgb(0, 255, 0);
-        };
-        .item-9{
-            background: rgb(0, 0, 0);
-        };
-        .items-10{
-            background: rgb(255, 0, 0);
-        };
-        
     }
-}
+
+    .flex-items{
+        padding: 1.5rem;
+    }
+    .items-1{
+        background: rgb(65, 65, 255);
+    }
+    .items-2{
+        background: rgb(255, 73, 73);
+
+    }
+    .items-3{
+        background: rgb(175, 175, 33);
+    };
+    .items-4{
+        background: rgb(255, 255, 66);
+    };
+    .items-5{
+        background: rgb(46, 46, 0);
+    };
+    .items-6{
+        background: rgb(255, 255, 0);
+    };
+    .items-7{
+        background: rgb(255, 116, 3);
+    };
+    .items-8{
+        background: rgb(0, 255, 0);
+    };
+    .item-9{
+        background: rgb(0, 0, 0);
+    };
+    .items-10{
+        background: rgb(255, 0, 0);
+    };
 
 .article{
     padding: 1rem;

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const LandingPage = () => {
     return(
         <div className='landing__page'>
-            <div className='heading'>
+            <div className='headingz'>
                 <h2 className='h2'>Welcome to IMTech Online</h2>
                 <img src={Icon} className='img' />
                 <div className='line1'>
