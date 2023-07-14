@@ -3,7 +3,7 @@ import TeacherHeader from './TeacherHeader';
 import '../css/AddCourse.css';
 import axios from 'axios';
 
-
+const teacherId = localStorage.getItem('teacherId')
 const TeacherAddCourse = () => {
 
 // *****************   Functionality of the page   ***************//
@@ -72,7 +72,7 @@ const handleSubmit = e => {
     form_Data.append('description', courseData.description);
     form_Data.append('duration', courseData.duration);
     form_Data.append('course_image', courseData.course_image);
-    form_Data.append('teacher', 3);
+    form_Data.append('teacher', teacherId);
 
     axios.post(BaseUrl + 'courses/', form_Data, {
         headers:{

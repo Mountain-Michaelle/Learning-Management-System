@@ -65,6 +65,31 @@
     border-color: white;
 }
 
+.cos_image{
+    width: 40px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.butn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+}
+.btn{
+    background: rgb(0, 133, 71) !important;
+    color: white !important;
+}
+
+.but11{
+    background-color: rgb(182, 10, 10) !important;
+}
+
+.btn11:hover{
+    background: red;
+}
+
 
 @media  screen and (max-width: 450px){
     .course__header h2{
@@ -73,4 +98,49 @@
         margin: 0 auto;
         font-size: .9rem;
     }
+}
+
+@media screen and (max-width: 620px){
+    .tbody1 tr td{
+        border-right-width: .1rem;
+        border-color: white;
+        padding: .2rem;
+        text-align: center
+    }
+
+
+
+    .btn{
+        padding: .3rem !important;
+        font-size: .8rem !important;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .tbody1 tr td{
+        border-bottom-width: .1rem;
+        border-color: white;
+        padding: .4rem;
+        text-align: center
+    }
+    .butn{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: .5rem;
+    }
+    .btn{
+        padding: .1rem !important;
+        font-size: .8rem !important;
+        font-weight: 500;
+
+    }
+
+    .cos_image{
+        width: 60px;
+        height: 50px;
+        object-fit: contain;
+    }
+    
 }
